@@ -1,0 +1,26 @@
+<html>
+    <script type="text/javascript">
+        function funk() {
+            var x = parseFloat(this.ta.value)
+            var y = parseFloat(this.tb.value)
+            var a = parseInt(this.ca.value)
+            var b = parseInt(this.cb.value)
+            
+            var clicks = b - a;
+            var dosage = y - x;
+
+            if (clicks < 0) {
+                clicks = 10 + clicks;
+                dosage -= 0.6;
+            }
+            alert (parseFloat(dosage+"").toFixed(2) + " - " + (clicks)) 
+        }
+    </script>
+    <body>
+        <form>
+    Left on pen: <input id="ta" type="text" size="20" /> clicks: <input id="ca" type="text" size="20" /><br />
+    Desired dosage : <input id="tb" type="text" size="20" /> clicks: <input id="cb" type="text" size="20" /><br />
+    <input type="button" value="calculate" name="calculate" onclick="funk(this)" />
+</form>
+</body>
+</html>
