@@ -18,9 +18,21 @@
     </script>
     <body>
         <form>
-    Left on pen: <input id="ta" type="text" size="20" /> clicks: <input id="ca" type="text" size="20" /><br />
-    Desired dosage : <input id="tb" type="text" size="20" /> clicks: <input id="cb" type="text" size="20" /><br />
-    <input type="button" value="calculate" name="calculate" onclick="funk(this)" />
+    <table>
+        <tr>
+    <td colspan="2">Left on pen:</td>
+</tr> 
+<tr>
+    <td>Number:</td><td><input id="ta" type="text" size="20" /></td>
+</tr>
+<tr>
+    <td>clicks past number:</td><td><input id="ca" type="text" size="20" /></td> 
+</tr>    
+<tr><td>Desired dosage:</td></tr>
+<tr><td>Number:</td><td><input id="tb" type="text" size="20" /></td></tr>
+<tr><td>clicks past number:</td><td><input id="cb" type="text" size="20" /></td></tr>
+<tr><td colspan="2"><input type="button" value="calculate" name="calculate" onclick="funk(this)" /></td></tr>
+    </table>
 </form>
 </body>
 </html>
