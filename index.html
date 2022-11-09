@@ -1,58 +1,66 @@
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         td {
-            border-style: dotted;
-            border-color: blueviolet;
-            font-size: 45px;
+            border-style: groove;
+            border-width: 8px;
+            border-color: olivedrab;
+            font-size: 32px;
+
         }
         input {
-            font-size: 45px;
+            font-size: 32px;
         }
         select {
-            font-size: 45px;
+            font-size: 32px;
         }
         table {
-            background-color: cadetblue;
+            background-color: darkcyan;
         }
     </style>
     <script type="text/javascript">
         function funk() {
-            alert(this.ta.value)
-            var x = parseFloat(this.ta.value)
-            var y = parseFloat(this.tb.value)
-            var a = parseInt(this.ca.value)
-            var b = parseInt(this.cb.value)
+            let x = parseFloat(this.ta.value)
+            let y = parseFloat(this.tb.value)
+            let a = parseInt(this.ca.value)
+            let b = parseInt(this.cb.value)
             
-            var clicks = b - a;
-            var dosage = y - x;
+            let clicks = b - a;
+            let dosage = y - x;
 
             if (clicks < 0) {
                 clicks = 10 + clicks;
                 dosage -= 0.6;
             }
-            alert (parseFloat(dosage+"").toFixed(2) + " - " + (clicks)) 
-        }
+            this.output.textContent = parseFloat(dosage+"").toFixed(2) + ", clicks over: " + (clicks);
+ß        }
     </script>
     <body>
         <form>
     <table width="100%" style="border-style: dotted; border-color: blueviolet;">
         <tr>
-    <td colspan="2">Left on pen:</td>
+            <td>
+                IMPORTANT!<br />
+                This is educational software. By using this software, you understand the following:
+                The creator of this page does not take any responsibilities for any consequences
+                of using the results given on this page.
+            </td>
+        </tr>
+        <tr>
+    <td>Left on pen:</td>
 </tr> 
 <tr>
-    <tr><td>Number:</td>
-        <td>
+    <tr>
+        <td align="center">
             <select id="ta">
+                <option value="0.0">0.0</option>
                 <option value="0.6">0.6</option>
                 <option value="1.2">1.2</option>
                 <option value="1.8">1.8</option>
                 <option value="2.4">2.4</option>
                 <option value="3.0">3.0</option>
             </select>
-        </td>
-    </tr>
-    <tr><td>clicks past number:</td>
-        <td>
+            Clicks over:
             <select id="ca">
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -69,8 +77,8 @@
         </td>
     </tr>    
 <tr><td>Desired dosage:</td></tr>
-<tr><td>Number:</td>
-    <td>
+<tr>
+    <td align="center">
         <select id="tb">
             <option value="0.6">0.6</option>
             <option value="1.2">1.2</option>
@@ -78,10 +86,7 @@
             <option value="2.4">2.4</option>
             <option value="3.0">3.0</option>
         </select>
-    </td>
-</tr>
-<tr><td>clicks past number:</td>
-    <td>
+        Clicks over:
         <select id="cb">
             <option value="0">0</option>
             <option value="1">1</option>
@@ -97,9 +102,10 @@
         </select>
     </td>
 </tr>
-<tr><td colspan="2"><input type="button" value="calculate" name="calculate" onclick="funk(this)" /></td></tr>
+<tr><td align="center"><input type="button" value="calculate" name="calculate" onclick="funk(this)" /></td></tr>
+<tr><td>Result:<br/><span id="output"></span></td></tr>
     </table>
 </form>
-        v0.2
+        v0.6
 </body>
 </html>
