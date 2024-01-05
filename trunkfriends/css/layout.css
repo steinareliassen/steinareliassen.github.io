@@ -1,0 +1,80 @@
+a {
+    text-decoration: none;
+    color: #FA86C4;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #000060;
+}
+
+td.side {
+    background-color: #fffbc5;
+    width: 20%;
+    vertical-align: top;
+    font-size: xxx-large;
+}
+
+td.large {
+    background-color: #fffbc5;
+    width: 20%;
+    vertical-align: top;
+    font-size: x-large;
+    border-bottom-width: 4px;
+    border-bottom-color: #9f9fff;
+    border-bottom-style: solid;
+}
+
+td.larger {
+    background-color: white;
+    width: 20%;
+    vertical-align: top;
+    font-size: xx-large;
+    border-bottom-width: 4px;
+    border-bottom-color: #9f9fff;
+    border-bottom-style: solid;
+}
+
+td.main {
+    background-color: #fffbc5;
+    width: 80%;
+}
+
+table.outer {
+    width: 80%;
+    alignment: center;
+    background-color: #9f9fff;
+    align-content: center;
+}
+
+table.inner {
+    alignment: center;
+    align-content: center;
+}
+
+td.head {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xxx-large;
+    background-color: #fffbc5;
+    border-bottom-width: 4px;
+    border-bottom-color: #9f9fff;
+    border-bottom-style: solid;
+
+}
+
+td.body{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+    background-color: #fffbc5;
+    border-bottom-width: 1px;
+    border-bottom-color: #9f9fff;
+    border-bottom-style: solid;
+}

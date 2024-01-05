@@ -1,0 +1,223 @@
+
+
+<html lang="uk">
+<head>
+    <title>Trunkfriends</title>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+<div align="center">
+    <img src="img/trunkbanner.png" alt="banner" width="40%"/>
+
+    <p>
+    </p>
+    <table class="outer">
+        <tr>
+            <td class="side">
+                <table>
+                    <tr>
+                        <td class="larger">
+                            <a href="index.html">
+                                <div width="100%">
+                                    Home
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="project_updates.html">Important updates</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="using.html">Using trunkfriends</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_win.html">Window installation files (MSI package)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_osx.html">OSX files (JAR package)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_deb.html">Debian & flavours (Ubuntu, etc.) installation files (deb
+                                package)</a>
+                        </td>
+                    </tr>
+                </table>
+            </td> <!-- end side -->
+            <td class="main">
+                <table class="inner">
+                    <tr>
+                        <td class="head">
+                            <div align="center">
+                                Using Trunkfriends.
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="body">
+                            <p></p>
+                            This document covers v0.3, and is not up-to-date with the newest features. It should,
+                            however, be plenty to get you started
+                            <p></p>
+                            <h2>First use</h2>
+                            <p></p>
+                            Once you start the app for the first time, it will be quite empty. You will see the
+                            about page, and have the possibility to click "Select Server" and then "Add Server".
+                            This is the first thing you must do.
+                            <p></p>
+                            Once you click "Add server" you should see something like this:
+                            <p></p>
+                            <img src="./img/firstauth.png" alt="screenshot of second auth step" width="100%">
+                            <p></p>
+                            Here, we have filled in the value "mastodon.social" as the server we want to use.
+                            This is where you enter the name of the server you are using. For instance, If your
+                            username is "@myuser@tech.lgbt", then tech.lgbt is your server, and you enter that
+                            here.
+                            <p></p>
+                            Once that is done, press "Activate"
+                            <p></p>
+                            ![screenshot of second auth step](./using/secondauth.png)
+                            <p></p>
+                            After you have pressed the "Activate button" a field with a URL will appear
+                            and a "Copy URL" button. Press this button. The URL then be copied to the
+                            clipboard. Do NOT try to select and copy the URL manually, this currently does
+                            not work.
+                            <p></p>
+                            Go to a browser, preferably one that is logged in at the sever you want
+                            to collect followers / following lists from, and paste the URL. If you are
+                            not logged in, your server will ask you to do so.
+                            <p></p>
+                            <img src="./img/masauth1.png" alt="screenshot of mastodon auth screen">
+                            <p></p>
+                            Mastodon will ask you to authorize Trunkfriends to give it access to your mastodon account.
+                            This is the same as you need to do if you use a client like Megalodon or similar on
+                            your phone to access mastodon. It is a way for the application to get a key it can use
+                            to access your mastodon data, without you exposing your password to the application.
+                            <p></p>
+                            You can at any time revoke access.
+                            <p></p>
+                            Once you press "Authorize", you will see a screen
+                            like this.
+                            <p></p>
+                            <img src="./img/masauth2.png" alt="second screenshot of mastodon auth screen">
+                            <p></p>
+                            This is a code that Trunkfriends will use to obtain the key from the mastodon
+                            server. Press the "Copy" to copy this key to your clipboard, go back to
+                            Trunkfriends and press the "Paste" button. Again, use the button, don't try to
+                            paste manually, the UI does not support this.
+                            <p></p>
+                            Now, press "finish registration", and your will have added your first server
+                            to Trunkfriends. If you have multiple mastodon accounts, you can add more servers,
+                            Trunkfriends can keep track of them all.
+                            <p></p>
+                            <h2>The first import of followers / following lists</h2>
+                            <p></p>
+                            Press "Refresh followers" and then "start importing following / followers list".
+                            After the import is done, you will be taken to the history overview that will
+                            have entries looking something like this:
+                            <p></p>
+                            <img src="./img/firstrun.png" alt="screenshot of first run" width="100%">
+                            <p></p>
+                            **23-08-13 21:40** is the time the import of these lines happened. Your UI will not have
+                            "next timeslot"
+                            button, as you have only run the import once.
+                            <p></p>
+                            The finger pointing at you means "following you" and the finger pointing to the right mean
+                            "you follow". The green dot indicates yes and the red indicates no. So in the list over,
+                            we can see that sheepdog@meow.social is following you, and you are following them.
+                            <p></p>
+                            Dogcow and minksheep howevever, are following you, but you do not follow them.
+                            <p></p>
+                            Since this is the first time you imported the lists, Trunkfriends cannot detect any changes,
+                            it can simply display the current status of those you follow and those that follow you.
+                            There
+                            will never be a line with two red dots, as they will only show up in the list if you
+                            have a relation to them.
+                            <p></p>
+                            You now probably want to wait a lill before you import the following / followers lists
+                            again, how long depends on how frequent your friends list change and how eager you are
+                            to check what has happened.
+                            <p></p>
+                            ## The second import of followers / following lists
+                            <p></p>
+                            Now, the second time you import, things can get a bit more interesting
+                            <p></p>
+                            <img src="./img/secondrun.png" alt="screenshot of second run" width="100%">
+                            <p></p>
+                            Now, a few things has happened. You will see a blue arrow on some lines, this means your
+                            connection to this user has changed. Green to red means the connection is lost.
+                            <p></p>
+                            You gained a new follower / following relation with
+                            lionkite, but sadly, dolphinlynx is not following you anymore, though, but you
+                            still follow them. mooseduck & dolphinpuffing on mastodon.art, however, you
+                            have compltely lost connection with. Maybe you have lost connection with them
+                            due to defederation? Trunkfriends cannot tell you why, maybe you unfollowed them,
+                            and they unfollowed you, maybe you blocked them. But if this is unexpected,
+                            you can check why.
+                            <p></p>
+                            You can navigate between the different timeslots when the imports happened by
+                            pressing previous or next timeslot buttons, or you can quickly get to a given
+                            timeslot by pressing the dropdown menu that shows the current timeslot, and
+                            choose a new timeslot.
+                            <p></p>
+                            <h2>Zooming in on mooseduck</h2>
+                            <p></p>
+                            When you view timeslots, you see what happened to your connection to a given user
+                            at a given time. You may want to know more about what happened to your connections
+                            to a given user at other times. For this, you use the lill spyglass at the end
+                            of the line. Let us click on the one on mooseducks line. This happens:
+                            <p></p>
+                            <img src="./img/zoommooseduck.png" alt="zooming in on mouseduck" width="100%">
+                            <p></p>
+                            This spyglass will effectively "zoom" you in on that user, and display all the
+                            recorded lines you have with them.
+                            <p></p>
+                            With mooseduck, we can see that they were discovered as a connection when we ran
+                            import 8/13-2023, but connection was lost the 20/10-20203.
+                            <p></p>
+                            Press "Clear search" to zoom out and back to the timeslot.
+                            <p></p>
+                            <h2>I imported my followers again, but I didn't get a new timeslot for the import?</h2>
+                            <p></p>
+                            If there were no changes between last time you ran the import and this, no changes
+                            are recorded, and no new timeslot was needed.
+                            <p></p>
+                            <h2>Nothing happens when I refresh? What is wrong?</h2>
+                            <p></p>
+                            If you change your password in mastodon, or revoke the access Trunkfriends had
+                            to your account, nothing will happen. We will soon implement more proper error
+                            messages, but the alpha release does not have them.
+                            <p></p>
+                            What you need to do is to select "Add new server" and add the one that you no
+                            longer have connection to. Don't worry, this will NOT overwrite any of your data
+                            for that server, your lists will be intact. Once you have gone through adding
+                            the "not new server" as a new server, it will have gotten a new access key (aka
+                            bearer token), and it should work again.
+                            <p></p>
+                            <h2>That's it.</h2>
+                            <p></p>
+                            Trunkfriends will get more functionality to make it more useful, but for how, this
+                            covers the main usage.
+                            <p></p>
+                            For future, we plan to give the option to view followers "as is", and help
+                            add followers to lists, do batch import of followers (handy after moving
+                            servers and reconnecting with lost friends), etc.
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
