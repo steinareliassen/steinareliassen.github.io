@@ -46,8 +46,12 @@
                     </tr>
                     <tr>
                         <td class="large">
-                            <a href="install_deb.html">Debian & flavours (Ubuntu, etc.) installation files (deb
-                                package)</a>
+                            <a href="install_deb.html">Linux (x86) installation files (debian and generic)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_source.html">Install from source (any system)</a>
                         </td>
                     </tr>
                 </table>
@@ -65,17 +69,24 @@
                         <td class="body">
                             <p></p>
                             This document covers v0.3, and is not up-to-date with the newest features. It should,
-                            however, be plenty to get you started
+                            however, be plenty to get you started.
                             <p></p>
                             <h2>First use</h2>
                             <p></p>
                             Once you start the app for the first time, it will be quite empty. You will see the
                             about page, and have the possibility to click "Select Server" and then "Add Server".
-                            This is the first thing you must do.
+                            This is the first thing you must do. Why?
+                            <p></p>
+                            Trunkfriends works by connecting to the mastodon instance (server) that you use, and
+                            fetch who you follow and who follow you. In order to do so, it needs to know what
+                            instance you use, and get permission to talk to that server "on your behalf". When
+                            you select "add server" you start the process of giving Trunkfriends permission
+                            to do this. Before you start, it helps to have a browser logged in on the mastodon
+                            account you want to use.
                             <p></p>
                             Once you click "Add server" you should see something like this:
                             <p></p>
-                            <img src="./img/firstauth.png" alt="screenshot of second auth step" width="100%">
+                            <img src="./img/firstauth.png" alt="screenshot of first auth step" width="100%">
                             <p></p>
                             Here, we have filled in the value "mastodon.social" as the server we want to use.
                             This is where you enter the name of the server you are using. For instance, If your
@@ -84,7 +95,7 @@
                             <p></p>
                             Once that is done, press "Activate"
                             <p></p>
-                            ![screenshot of second auth step](./using/secondauth.png)
+                            <img src="./img/secondauth.png" alt="screenshot of second auth step" width="100%">
                             <p></p>
                             After you have pressed the "Activate button" a field with a URL will appear
                             and a "Copy URL" button. Press this button. The URL then be copied to the

@@ -44,8 +44,12 @@
                     </tr>
                     <tr>
                         <td class="large">
-                            <a href="install_deb.html">Debian & flavours (Ubuntu, etc.) installation files (deb
-                                package)</a>
+                            <a href="install_deb.html">Linux (x86) installation files (debian and generic)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_source.html">Install from source (any system)</a>
                         </td>
                     </tr>
                 </table>
@@ -61,13 +65,14 @@
                     </tr>
                     <tr>
                         <td class="body">
+                            <h2>Alternative 1 (Debian/Ubuntu/Flavours</h2>
                             <ul>
                                 <li>
-                                    Download <a href="https://github.com/steinareliassen/trunkfriends/releases/download/0.3deb/trunkfriends_0.3.0-1_amd64.deb">
-                                    trunkfriends_0.3.0-1_amd64.deb</a>.
+                                    Download <a href="https://github.com/steinareliassen/trunkfriends/releases/download/0.4/trunkfriends_0.4.0-1_amd64.deb">
+                                    trunkfriends_0.4.0-1_amd64.deb</a>.
                                 </li>
                                 <li>
-                                    Install with <i>sudo dpkg -i trunkfriends_0.3.0-1_amd64.deb</i>
+                                    Install (or upgrade) with <i>sudo dpkg -i trunkfriends_0.4.0-1_amd64.deb</i>
                                 </li>
                                 <li>
                                     Uninstall can be done with <i>sudo dpkg --remove trunkfriends</i>
@@ -84,10 +89,30 @@
                                 <li>
                                     If you already run Trunkfriends from source, the data is stored in the same location, just install and keep
                                     using. If there are any issues at all, do not hesitate to send a private message to
-                                    <a href="https://mastodon.social/@trunkfriends>">@trunkfriends@mastodon.social</a>!
+                                    <a href="https://mastodon.social/@trunkfriends">@trunkfriends@mastodon.social</a>!
                                 </li>
                             </ul>
                         </td>
+                    </tr>
+                    <tr>
+                        <td class="body">
+                            <h2>Alternative 2 (Generic x86 linux)</h2>
+                            <ul>
+                                <li>
+                                    Install Java 17 or newer, or download GraalVM and put the bin folder in the GraalVM in path, and
+                                    the GraalVM folder in an env variable called JAVA_HOME
+                                </li>
+                                <li>
+                                    Download <a href="https://github.com/steinareliassen/trunkfriends/releases/download/0.4/Trunkfriends-linux-x64-0.4.0.zip">
+                                    Trunkfriends-linux-x64-0.4.0.zip</a> and extract it. The archive contains just one JAR file.
+                                </li>
+                                <li>
+                                    Start Trunkfriends with<br />
+                                    <i>java -jar Trunkfriends-linux-x64-0.4.0.jar</i>
+                                </li>
+                            </ul>
+                        </td>
+
                     </tr>
                 </table>
 

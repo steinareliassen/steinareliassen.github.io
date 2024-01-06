@@ -1,0 +1,111 @@
+<html lang="uk">
+<head>
+    <title>Trunkfriends</title>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+<div align="center">
+    <img src="img/trunkbanner.png" alt="banner" width="40%"/>
+    <p>
+    </p>
+    <table class="outer">
+        <tr>
+            <td class="side">
+                <table>
+                    <tr>
+                        <td class="larger">
+                            <a href="index.html">
+                                <div width="100%">
+                                    Home
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="project_updates.html">Important updates</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="using.html">Using trunkfriends</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_win.html">Window installation files (MSI package)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_osx.html">OSX files (JAR package)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_deb.html">Linux (x86) installation files (debian and generic)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_source.html">Install from source (any system)</a>
+                        </td>
+                    </tr>
+                </table>
+            </td> <!-- end side -->
+            <td class="main">
+                <table class="inner">
+                    <tr>
+                        <td class="head">
+                            <div align="center">
+                                Installing from source
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="body">
+                            <p>
+                                Running from source is quite simple, all you need is to have Java installed, or download GraalVM, a
+                                Java runtime that requires no installation.
+                            </p>
+                            <p>
+                                Step 0: Building without installing Java</p>
+                            <p>
+                                Download GraalVM and extract this to a folder. Set env variable JAVA_HOME to point to the extracted
+                                folder. For instance, run<br />
+                                <i>export JAVA_HOME=/home/myuser/programs/graalvm-jdk-17.0.9+11.1</i><br />
+                                in the terminal before you start building Trunkfriends
+                            </p>
+                            <p>
+                                Step 1: Obtaining the source.</p>
+                            <p>
+                                Go to <a href="https://github.com/steinareliassen/trunkfriends/tags">Version overview</a>, find the version
+                                you want to download (probably the latest version), and press "downloads", and select to download source code either
+                                as ZIP or tar.gz archive. Extract the archive to a folder<br />
+                                You can also go to <a href="https://github.com/steinareliassen/trunkfriends">Main branch overview</a> and press
+                                the blue "code" button, and select "download zip", or use git to clone the repos. If you select build from main
+                                branch, you get access to the very latest, unpublished features, but please note that you are more likely to run
+                                into bugs as extensive bug testing only happens prior to release.
+                            </p>
+                            <p>
+                                Step 2: Running Trunkfriends.<br />
+                                Open a terminal / command window and navigate to the folder containing the extracted source package. Make sure you have
+                                Java in your path, version 17 or newer. type <br />
+                                <i>java --version</i><br />
+                                to validate.<br />
+                                To run trunkfriends, write<br />
+                                <i>sh gradlew run</i> - on linux / unix / osx<br />
+                                <i>gradlew.bat run</i> - on windows
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
+

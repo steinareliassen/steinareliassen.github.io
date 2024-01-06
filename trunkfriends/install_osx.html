@@ -43,8 +43,12 @@
                     </tr>
                     <tr>
                         <td class="large">
-                            <a href="install_deb.html">Debian & flavours (Ubuntu, etc.) installation files (deb
-                                package)</a>
+                            <a href="install_deb.html">Linux (x86) installation files (debian and generic)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_source.html">Install from source (any system)</a>
                         </td>
                     </tr>
                 </table>
@@ -61,18 +65,22 @@
                     <tr>
                         <td class="body">
                             <p></p>
-                            Due to Apple being strict about developers registering and signing their software
-                            "properly", install files for OSX is not provided at the moment. The aim is to have
-e                            a package that contains the Java runtime and Trunkfriends, so you only need to download
-                            one file and unpack it.
+                            For OSX, a packaged JAR file that can be executed directly as long as you have JAVA
+                            installed, is so far what is provided. The reason for this is the difficulties of
+                            building an install binary without registering as a developer with Apple. This is
+                            not free. It may be something that will be done eventually, but now, the JAR
+                            file is the way.
                             <p></p>
-                            For now, you first need to install Java, then download Trunkfriends as a ZIP file,
-                            and unpack it. When Java is installed, all you need to do is to doubleclick on thie
+                             When Java is installed, all you need to do is to doubleclick on thie
                             unpacked file, and Trunkfriends will start.
                             <p></p>
                             Go to the
                             <a href="https://www.oracle.com/java/technologies/downloads/#jdk17-mac">Java download page</a>
                              from Oracle, and download the installer. If you use brew, you can use it to install OpenJDK@17.
+                            <p></p>Download
+                            <a href="https://github.com/steinareliassen/trunkfriends/releases/download/0.4/Trunkfriends-macos-0.4.0.zip">Trunkfriends-macos-0.4.0.zip</a>,
+                            and extract it. To start, simply double-click on the Trunkfriends.jar file, or, in a terminal, write<br />
+                            <i>java -jar Trunkfriends-macos-0.4.0.jar</i>
                         </td>
                     </tr>
                 </table>

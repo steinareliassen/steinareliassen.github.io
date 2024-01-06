@@ -33,7 +33,7 @@
                     </tr>
                     <tr>
                         <td class="large">
-                            <a href="install_win.html">Window installation files (MSI package)</a>
+                            <a href="install_win.html">Window installation files & JAR package</a>
                         </td>
                     </tr>
                     <tr>
@@ -43,8 +43,12 @@
                     </tr>
                     <tr>
                         <td class="large">
-                            <a href="install_deb.html">Debian & flavours (Ubuntu, etc.) installation files (deb
-                                package)</a>
+                            <a href="install_deb.html">Linux (x86) installation files (debian and generic)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="large">
+                            <a href="install_source.html">Install from source (any system)</a>
                         </td>
                     </tr>
                 </table>
@@ -60,17 +64,13 @@
                     </tr>
                     <tr>
                         <td class="body">
-                            <p>
-                                Project is now in version 0.4, but install files for windows are still in 0.3. The machine I used to
-                                build windows install files is broken. A new has been ordered and once it arrives (1-2 weeks?),
-                                new install files for windows will be built. You can use 0.3 until then and easily upgrade when 0.4
-                                comes out.
-                            </p>
+                            <h2>Alternative 1 - Installation package</h2>
                             <ul>
                             <li>
-                                Download and run <a href="https://github.com/steinareliassen/trunkfriends/releases/download/0.3msi/Trunkfriends-0.3.0.msi">
-                                Trunkfriends-0.3.0.msi</a>. The installation should be pretty straight forward, and Trunkfriends should be on
-                                the start menu.
+                                Download and run <a href="https://github.com/steinareliassen/trunkfriends/releases/download/0.4/Trunkfriends-0.4.0.msi">
+                                Trunkfriends-0.4.0.msi</a>. The installation should be pretty straight forward, and Trunkfriends should be on
+                                the start menu. Note that since the installation package is not signed, you may get a warning, and only option is to exit install.
+                                There should be a "show more" in the warning message where you can opt to "install anyway"
                             </li>
                             <li>
                                 Do not worry about uninstalling Trunkfriends to install a new version, your data is not removed. The data
@@ -85,6 +85,26 @@
                         </ul>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="body">
+                            <h2>Alternative 2 - Running JAR archive directly</h2>
+                            <ul>
+                                <li>
+                                    This alternative requires no installation of Trunkfriends, but you need to Java installed already. You need Java 17 or later.
+                                    If you do not have this installed, using alternative 1 is probably the best.
+                                </li>
+                                <li>
+                                    Download <a href="https://github.com/steinareliassen/trunkfriends/releases/download/0.4/Trunkfriends-windows-x64-0.4.0.zip">
+                                    Trunkfriends-windows-x64-0.4.0.zip</a> and extract it. The archive contains just one JAR file.
+                                </li>
+                                <li>
+                                    Start Trunkfriends with<br />
+                                    <i>java -jar Trunkfriends-linux-x64-0.4.0.jar</i>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
                 </table>
 
             </td>
