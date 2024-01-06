@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-
 <div align="center">
     <img src="img/trunkbanner.png" alt="banner" width="40%"/>
     <p>
@@ -17,7 +16,7 @@
                         <td class="larger">
                             <a href="index.html">
                                 <div width="100%">
-                                    Home
+                                Home
                                 </div>
                             </a>
                         </td>
@@ -55,38 +54,25 @@
                     <tr>
                         <td class="head">
                             <div align="center">
-                                Setting up Trunkfriends on Debian (Ubuntu, etc).
+                                Setting up Trunkfriends on OSX.
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="body">
-                            <ul>
-                                <li>
-                                    Download <a href="https://github.com/steinareliassen/trunkfriends/releases/download/0.3deb/trunkfriends_0.3.0-1_amd64.deb">
-                                    trunkfriends_0.3.0-1_amd64.deb</a>.
-                                </li>
-                                <li>
-                                    Install with <i>sudo dpkg -i trunkfriends_0.3.0-1_amd64.deb</i>
-                                </li>
-                                <li>
-                                    Uninstall can be done with <i>sudo dpkg --remove trunkfriends</i>
-                                </li>
-                                <li>
-                                    Shortcut to the application should be added to your menu. You can also find the application here:<br/>
-                                    /opt/trunkfriends/bin/Trunkfriends
-                                </li>
-                                <li>
-                                    Do not worry about uninstalling Trunkfriends to install a new version, your data is not removed. The data
-                                    will be in your user home folder, under a folder called .trunkfriends, and it can be a good idea to keep
-                                    a backup of this folder if you want to make sure not to lose data.
-                                </li>
-                                <li>
-                                    If you already run Trunkfriends from source, the data is stored in the same location, just install and keep
-                                    using. If there are any issues at all, do not hesitate to send a private message to
-                                    <a href="https://mastodon.social/@trunkfriends>">@trunkfriends@mastodon.social</a>!
-                                </li>
-                            </ul>
+                            <p></p>
+                            Due to Apple being strict about developers registering and signing their software
+                            "properly", install files for OSX is not provided at the moment. The aim is to have
+e                            a package that contains the Java runtime and Trunkfriends, so you only need to download
+                            one file and unpack it.
+                            <p></p>
+                            For now, you first need to install Java, then download Trunkfriends as a ZIP file,
+                            and unpack it. When Java is installed, all you need to do is to doubleclick on thie
+                            unpacked file, and Trunkfriends will start.
+                            <p></p>
+                            Go to the
+                            <a href="https://www.oracle.com/java/technologies/downloads/#jdk17-mac">Java download page</a>
+                             from Oracle, and download the installer. If you use brew, you can use it to install OpenJDK@17.
                         </td>
                     </tr>
                 </table>
@@ -98,4 +84,3 @@
 </div>
 </body>
 </html>
-
